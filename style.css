@@ -100,6 +100,14 @@ main {
     align-items: center;
 }
 
+.tasks ul li span{
+    background: #f0f0f0;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    height: fit-content;
+}
 .tasks ul li button {
     background: #dc3545;
     color: white;
@@ -118,16 +126,11 @@ main {
 
 .info-modal{
     display: none;
- 
+    
 }
 
 
 .task-module{
-  
-position: absolute;
-top: 50%;
-left: 50%;
-transform:translate (-50%,-50%);
     height: 330px;
     width: 70vw;
     border-radius: 8px;
@@ -159,6 +162,7 @@ span{
     font-size: 20px ;
     font-weight: 700;
     height: 40px;
+    border: none;
 }
 input[type="text"]{
     width: 75%;
