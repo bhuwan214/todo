@@ -1,3 +1,3 @@
-# Here we start a highly functional todo app , mostly ffor my own purpose 
+## Here we start  
 
-## let's try it now
+#### let's try it now
