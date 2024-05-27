@@ -133,9 +133,8 @@ main {
 .task-module{
     height: 330px;
     width: 70vw;
+    min-width: 350px;
     border-radius: 8px;
-    max-width: 500px;
-    min-width: 300px;
 display: flex;
 flex-direction: column;
 padding-top: 10px;
@@ -156,8 +155,8 @@ box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     color: white;
 }
 
-span{
-    background-color: white;
+.group >span{
+    
     color: black;
     font-size: 20px ;
     font-weight: 700;
@@ -224,4 +223,12 @@ select{
     border-radius: 5px;
     background-color: #dcdbdb;
 
+}
+
+
+
+@media(max-width:600px){
+    .row-two{
+        width: 85%;
+    }
 }
