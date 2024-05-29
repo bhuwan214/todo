@@ -5,7 +5,10 @@ const infoModal =document.querySelector("#info");
 const Add =document.querySelector("#the-btn")
 const Selector =document.querySelector("select")
 const categoriesList =document.querySelector("ul")
-
+const workList =document.querySelector("#work")
+const personalList =document.querySelector("#personal")
+const shoppingList =document.querySelector("#shopping")
+const otherList =document.querySelector("#other")
 
 function AddTask(){
 
@@ -16,9 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
        
         infoModal.removeAttribute("class")
         container.style.display="none"
-        
         addingThing() 
-
     });
 });
 }
@@ -53,11 +54,47 @@ AddTask()
             listItem.appendChild(dateData)
             listItem.appendChild(deleteButton);
             taskList.appendChild(listItem);
+             
+            workList.addEventListener("click",()=>{
+                console.log("clicked")
+                if(listItem.className!=="work"){
+                    listItem.style.display="none"
+                }
+             else listItem.style.display="flex"
+
+            })
+
+            personalList.addEventListener("click",()=>{
+                if(listItem.className!=="personal"){
+                    listItem.style.display="none"
+                }
+             else listItem.style.display="flex"
+
+            })
+
+            shoppingList.addEventListener("click",()=>{
+                if(listItem.className!=="shopping"){
+                    listItem.style.display="none"
+                }
+             else listItem.style.display="flex"
+
+            })
+
+            otherList.addEventListener("click",()=>{
+                console.log("clicked")
+                if(listItem.className!=="other"){
+                    listItem.style.display="none"
+                }
+             else listItem.style.display="flex"
+
+            })
+
         }
+
+    
     
     },{once:true});
 
  }
-
 
 
