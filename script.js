@@ -36,11 +36,16 @@ AddTask()
         const dataField = document.querySelector("#data")
         const dateField = document.querySelector("#date-data")
         const taskText =dataField.value;
-        const dateText =dateField.value;
+        const taskDate =dateField.value;
+        const dateText =taskDate.slice(5,11)
+
         const catValue =Selector.value;
 
-    console.log(dateText)
+        if(taskText=="" || dateText=="")
+            alert("something is empty, fill that then sumbit you a**hole")
+
         if (taskText && dateText) {
+         
             const listItem = document.createElement('li');
             listItem.textContent = taskText;
             listItem.setAttribute("class",`${catValue}`)
