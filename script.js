@@ -9,6 +9,7 @@ const workList =document.querySelector("#work")
 const personalList =document.querySelector("#personal")
 const shoppingList =document.querySelector("#shopping")
 const otherList =document.querySelector("#other")
+const allList =document.querySelector("#all")
 
 function AddTask(){
 
@@ -87,6 +88,10 @@ AddTask()
                 }
              else listItem.style.display="flex"
 
+            })
+
+            allList.addEventListener("click",()=>{
+                listItem.style.display="flex"
             })
 
         }

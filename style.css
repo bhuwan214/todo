@@ -137,7 +137,7 @@ main {
 .task-module{
     height: 310px;
     width: 70vw;
-    max-width: 800px;
+    max-width: 700px;
     min-width: 350px;
     border-radius: 8px;
 display: flex;
@@ -198,7 +198,7 @@ input[type="date"]{
     border-radius:5px;
     margin-bottom:20px ;
     background: #28a745;
-    box-shadow:5px 5px 5px #434040;
+    box-shadow:5px 5px 5px #aba7a7;
     transition: background 0.3s;
 
 }
