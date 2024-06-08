@@ -1,9 +1,11 @@
 // I will never understand next time i revisit ....
 
-const div_info = document.querySelector("#info");
+export function info(){
+
+
+const div_info = document.querySelector(".info-modal");
 const form = document.createElement("form");
 
-//
 div_info.appendChild(form);
 
 //Constructing the form with Input Field , Slection Field etc
@@ -62,3 +64,6 @@ const Btn_Add = document.createElement("button");
 Btn_Add.id = "the-btn";
 Btn_Add.textContent = "Add";
 form.appendChild(Btn_Add);
+
+return div_info;
+}
