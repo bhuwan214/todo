@@ -8,56 +8,17 @@
 </head>
 <body>
     <div class="container" >
-        <header>
-            <h1>Todo List</h1>
-            <button class="add-btn">Add Task</button>
-        </header>
-        <main>
-            <aside class="categories">
-                <h2>Group</h2>
-                <ul>
-                    <li id="all">All</li>
-                    <li id="work">Work</li>
-                    <li id="personal">Personal</li>
-                    <li id="shopping">Shopping</li>
-                    <li id="other">Others</li>
-                </ul>
-            </aside>
-            <section class="tasks">
-                <h2>Tasks</h2>
-                <ul id="task-list">
-                    <!-- // Tasks will be added here dynamically  -->
-                </ul>
-            </section>
-        </main>
+        
     </div>
 
-    <div class="info-modal" id="info" >
-    <div class="task-module">
-        
-        <label>What are you planning?</label>
-        <input type="text" placeholder="Write your plans" id="data" min="4" max="40">
-        
-        <div class="row-two">
-            <input type="date" id="date-data" required>
-            <div class="group">
-                <span>Group: </span>
-                <select name="" id="selection">
-                <option value="work">Work</option>
-                <option value="personal">Personal</option>
-                <option value="shopping">Shopping</option>
-                <option value="other">other</option>
-            </select>
-              </div>
-        </div>
-    
-        <button id="the-btn">Add</button>
-     
-    </div>
+    <div class="info-modal"  >
+   
 </div>
 
 
-
-    <script src="script.js"></script>
+<script src="body.js"></script>
+    <script src="script.js" type="module"></script>
+    <!-- <script src="filter.js" type="module"></script> -->
+     <script src="info-module.js"></script>
 </body>
 </html>
