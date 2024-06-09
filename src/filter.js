@@ -1,5 +1,4 @@
 
-
 // Function to filter tasks based on category
 function filterTasks(listItems, category) {
     listItems.forEach(item => {
@@ -16,12 +15,15 @@ function showAllTasks(listItems) {
 
 // Function to get all task list items
 function getAllTaskListItems() {
-    return document.querySelectorAll("#task-list li");
+    return  document.querySelectorAll("#task-list li");
 }
 
 // Function to setup category filters
 export function setupCategoryFilters() {
     document.addEventListener("DOMContentLoaded", () => {
+        
+       
+
         const ulElement = document.querySelector("#task-list");
         
         const workList = document.querySelector("#work");
@@ -36,9 +38,11 @@ export function setupCategoryFilters() {
             button.addEventListener("click", (event) => {
                 const category = event.target.id;
                 const listItems = getAllTaskListItems();
-                if (category === "all") {
+
+                if (category === "all" ||category === "" ) {
                     showAllTasks(listItems);
                 } else {
+                   
                     filterTasks(listItems, category);
                 }
             });
