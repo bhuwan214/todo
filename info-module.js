@@ -16,6 +16,7 @@ label.textContent = "What are you planning ?";
 first_input.id = "data";
 first_input.type = "text";
 first_input.placeholder = "Note your plans";
+first_input.required="true";
 
 form.appendChild(label);
 form.appendChild(first_input);
