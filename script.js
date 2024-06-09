@@ -5,8 +5,8 @@
 import {mainbody} from './body.js' 
 import {info} from './info-module.js' 
 // import {initializeApp} from "./initialize.js"
-// import { setupAddTask } from './Addtask.js'
-import { initializeApp } from './in.js'
+import { setupCategoryFilters } from './filter.js'
+import { initializeApp } from './initialize.js'
 document.addEventListener("DOMContentLoaded",()=>{
    
     // const container = document.querySelector(".container")
@@ -17,5 +17,5 @@ document.addEventListener("DOMContentLoaded",()=>{
 })
 
 initializeApp()
-
+setupCategoryFilters()
 
