@@ -28,37 +28,29 @@ This is a simple ToDo application built using HTML, CSS, and JavaScript. It allo
 
 ### Screenshot
 
-![ToDo App Screenshot](./screenshot.jpg)
+![ToDo App Screenshot](./src/Screenshot-todo.png)
 
 ### Links
 
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://bhuwan214.github.io/todo/)
 
 ## Setup
 
 ### Installation
 
 1. Clone the repository:
-    ```sh
-    git clone https://github.com/bhuwan214/todo.git
-    ```
+    ```sh git clone https://github.com/bhuwan214/todo.git```
 2. Navigate to the project directory:
-    ```sh
-    cd todo
-    ```
+    ```sh cd todo```
 3. Install dependencies (webpack):
-    ```sh
-npm install webpack webpack-cli webpack-dev-server html-webpack-plugin --save-dev
-                &&&&&
-npm install style-loader css-loader --save-dev
-    ```
+    ```sh npm install webpack webpack-cli webpack-dev-server html-webpack-plugin --save-dev ```
+
+```sh npm install style-loader css-loader --save-dev```
 
 ### Usage
 
 1. Start the local server:
-    ```sh
-    npm start
-    ```
+    ```sh npm start ```
 2. Open your browser and navigate to `http://localhost:3000` to see the app in action.
 
 ## My Process
@@ -79,7 +71,8 @@ While building this project, I learned how to:
 - Use event delegation to manage dynamic elements
 - Filter tasks based on categories
 - Create a deployment subtree branch for GitHub Pages
-   ```sh git subtree split --prefix dist -b gh-pages git push -f origin gh-pages:gh-pages```
+   ```sh git subtree split --prefix dist -b gh-pages```
+   ```sh git push -f origin gh-pages:gh-pages```
     
 
 
@@ -91,4 +84,4 @@ While building this project, I learned how to:
 
 ## Acknowledgments
 
-Special thanks to [MDN Web Docs](https://developer.mozilla.org/) and [Medium] (https://medium.com/)  for the helpful tutorials and documentation.
+Special thanks to [MDN Web Docs](https://developer.mozilla.org/)and [Medium](https://medium.com/)for the helpful tutorials and documentation.
